@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bomb Defuse Game</title>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+
+  <!-- Handy inkl. Chat auf der linken Seite -->
+  <section class="chat ">
+    <h2>Samsung</h2>
+
+    <!-- Der Home Screen des Handys -->
+    <div class="chatOutput homeScreen ">
+      <div class="homeScreenUpper ">
+        <!-- Obere Anzeige im Handy mitTelefonanbieter und Akkustand -->
+        <div class="dateRow">
+          <p>Telekom</p>
+          <p>Akku: 87%</p>
+        </div>
+
+        <div class="mailOutsite">
+          <!-- erste Email die eingeblendet wird -->
+          <div class="mailContainer mailHide mail1">
+            <h3>gmx.de | Email-Engang</h3>
+            <h5>Absender: info@alfatraining.de</h5>
+            <h5>Betreff: Herzlichen Glückwunsch</h5>
+            <p>JavaScript Kurs erfolgreich bestanden</p>
+          </div>
+          <!-- zweite Email die eingeblendet wird -->
+          <div class="mailContainer mailHide mail2">
+            <h3>gmx.de | Email-Engang</h3>
+            <h5>Absender: Oygen@googlemail.de</h5>
+            <h5>Betreff: Wichtige Erkenntnis</h5>
+            <p>Kein Vorteil ohne Nachteil!!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uhrzeit, die dynamisch erzeugt wird -->
+      <div class="timeContainer">
+        <p class="time"></p>
+      </div>
+
+
+    </div>
+
+    <div class="chatOutput chatOutputPrivate chatHidden">
+
+    </div>
+
+    <div class="chatOutput chatOutputPublic chatHidden">
+
+    </div>
+    <!--Die Buttons unten am Handy -->
+    <div class="chatRooms">
+      <button class="publicBtn chatHidden">Public</button>
+      <button class="privateBtn chatHidden">Team</button>
+      <button class="homeBtn chatBtnColor">Home</button>
+      <button class="chatBtn ">Chat</button>
+    </div>
+
+    <!-- Die Texteingabe für die Chats -->
+    <div class="chatInputDiv">
+      <input class="chatHidden" type="text" placeholder="Texteingabe">
+      <button class="chatHidden" type="button">Enter</button>
+    </div>
+  </section>
+
+  <!-- Die Bombe -->
+  <section class="bomb">
+    <!-- Oberer Teil der Bombe -->
+    <!-- Der Energy Button -->
+    <div class="bombTop">
+      <button class="energyBtn">Energy</button>
+      <div class="explosivePic"></div>
+    </div>
+
+    <!-- Mittlerer Teil der Bombe -->
+    <!-- Batterieanzeige und Farbverlauf -->
+    <div class="bombMiddle">
+      <div class="bombDisplay">
+        <h3>Battery Power</h3>
+        <h4 class="batteryPower">100%</h4>
+        <canvas class="canvas" width="" height=""></canvas>
+      </div>
+
+      <!-- Die LEDs -->
+      <div class="leds">
+        <div class="led led1"></div>
+        <div class="led led2"></div>
+        <div class="led led3"></div>
+        <div class="led led4"></div>
+      </div>
+    </div>
+
+    <!-- Unterer Teil der Bombe -->
+    <!-- Vier Input Felder und der Enter Button -->
+    <div class="bombBottom">
+      <div class="inputFields">
+        <input type="text" class="input input1" pattern="^[0-9]{1}$"></input>
+        <input type="text" class="input input2" pattern="^[0-9]{1}$"></input>
+        <input type="text" class="input input3" pattern="^[0-9]{1}$"></input>
+        <input type="text" class="input input4" pattern="^[0-9]{1}$"></input>
+      </div>
+      <div class="enter">
+        <button class="enterBtn">Enter</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Notizen -->
+  <section class="notice">
+    <div class="allNotices">
+      <h3 class="pNoticesH3">Notizen</h3>
+      <div class="pNoticeWrap">
+        <p class="pNotices">
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Game Over Ansicht -->
+  <div class="end endeHidden">
+    <h1>Game Over</h1>
+    <p>Der Tod kann zwar das Leben beenden</p>
+    <p>aber niemals die Liebe...</p>
+    <br>
+    <br>
+    <p class="gameOverLastSentence gameOverVisible"><em>...zu JavaScript</em></p>
+
+
+  </div>
+
+</body>
+
+</html>

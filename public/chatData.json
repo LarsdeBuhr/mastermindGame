@@ -1,0 +1,53 @@
+[
+  {
+    "word": "alleine",
+    "text": {
+      "chatMsg": "Wir sind für dich da. Keine Sorge"
+    }
+  },
+  {
+    "word": "Scheiße",
+    "text": {
+      "chatMsg": "Ruhe bewahren"
+    }
+  },
+  {
+    "word": "Hallo",
+    "text": {
+      "chatMsg": "Hi :)"
+    }
+  },
+  {
+    "word": "helfen",
+    "text": {
+      "chatMsg":
+        "Wir verhören den Bombenbauer gerade und versuchen ihm Infos über die PIN herauszulocken."
+    }
+  },
+  {
+    "word": "Idee",
+    "text": {
+      "chatMsg": "Probier mal die "
+    }
+  },
+  {
+    "word": "Lösung",
+    "text": {
+      "chatMsg": "Wir haben den Code. Er lautet: "
+    }
+  },
+  {
+    "word": "Energy",
+    "text": {
+      "chatMsg":
+        "Durch mehrmaliges Drücken der Taste füllt sich die Batterie wieder auf."
+    }
+  },
+  {
+    "word": "LEDs",
+    "text": {
+      "chatMsg":
+        "Die LEDs zeigen dir an ob eine Ziffer korrekt war oder nicht. LEDs sind zufällig angeordnet."
+    }
+  }
+]
